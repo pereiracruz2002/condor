@@ -6,16 +6,52 @@
  */
 ?>
 <div class="row">
-  <div class="large-12 columns tit_noticias_index">
-    <h4>Últimas notícias</h4>
-    <hr>
+  <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
+      <div class="large-4 columns txt_blog">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a
+          type specimen book<br>
+          <span class="bt_saiba">saiba mais</span>
+      </div>
+
+      <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
+          <div class="large-4 columns txt_blog">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book
+              <br>
+              <span class="bt_saiba">saiba mais</span>
+          </div>
   </div>
+<br>
+<br>
+<div class="row">
+  <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
+      <div class="large-4 columns txt_blog">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a
+          type specimen book
+          <br>
+          <span class="bt_saiba"><a href="#">saiba mais</a></span>
+      </div>
+
+      <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
+          <div class="large-4 columns txt_blog">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book
+              <br>
+              <span class="bt_saiba">saiba mais</span>
+          </div>
+  </div>
+  <br><br>
 </div>
 
-<div class="row">
-  <div class="large-12 columns noticia"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_noticias.png"></img>
-  </div>
-</div>
+
 <br>
 <br>
 <div class="fundo_rodape">
