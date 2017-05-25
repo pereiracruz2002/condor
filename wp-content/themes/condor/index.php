@@ -4,7 +4,9 @@
 
     <div class="row">
 
-      <div class="large-4 columns pic_index"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_empresa.png"></img><br>
+      <div class="large-4 columns pic_index">
+      
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_empresa.png"></img><br> -->
         <h2 class="titulo_home">Empresa</h2>
         <span class="txt_home">
           CONDOR ASSESSORIA é uma empresa prestadora
