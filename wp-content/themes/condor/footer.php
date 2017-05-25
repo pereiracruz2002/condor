@@ -6,6 +6,14 @@
  */
 ?>
 <div class="row">
+  <?php
+      global $wp_query;
+      $args = array_merge( array( 'post_type' => 'novidades' ) );
+      query_posts( $args );
+      $i = 0;
+      ?>
+      <?php while ( have_posts() ) : the_post();?>
+      <?php $banner = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big' ); ?>
   <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
       <div class="large-4 columns txt_blog">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
