@@ -18,16 +18,18 @@
     <title>Condor Assessoria COntábil, Jurídica e Tributária.</title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/accordion.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     		<!--wordpress head-->
 		<?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
     <div class="row">
 
-      <div class="large-6 columns"><img src="imgs/logo.png"></img></div>
+      <div class="large-6 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/logo.png"></img></div>
 <br>
       <div class="large-3 columns txt_contato_topo"> <i class="fa fa-phone"></i>
         <span class="">Central de atendimento<br>
