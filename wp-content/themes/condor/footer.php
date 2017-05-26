@@ -5,6 +5,12 @@
  * @package bootstrap-basic
  */
 ?>
+<div class="row">
+  <div class="large-12 columns tit_noticias_index">
+    <h4>Últimas notícias</h4>
+    <hr>
+  </div>
+</div>
 <br />
 <br />
 
