@@ -45,7 +45,41 @@
 
     <div class="fundo_menu">
       <br>
-      <span>HOME  | <a href="empresa.php"> A EMPRESA </a> |  <a href="servicos.php"> NOSSOS SERVIÇOS </a>  |  <a href="parceiros.php"> PARCEIROS </a>   |  BLOG  |  <a href="contato.php"> CONTATO </a> </span>
+      <?php
+      wp_nav_menu( array(
+'menu' => 'meu_menu',
+
+'theme_location' => 'meu_menu',
+
+'container' => 'div',
+
+'container_class' => 'classe_do_container',
+
+'container_id' => 'menu_principal',
+
+'menu_class' => 'classe_do_menu',
+
+'echo' => true,
+
+'menu_id' => 'menu_topo',
+
+'before' => '',
+
+'after' =>'',
+
+'link_before' => '',
+
+'link_after' => ' | ',
+
+'depth' => 0,
+
+'walker' => '',
+
+) );
+
+
+      ?>
+     <!--  <span>HOME  | <a href="empresa.php"> A EMPRESA </a> |  <a href="servicos.php"> NOSSOS SERVIÇOS </a>  |  <a href="parceiros.php"> PARCEIROS </a>   |  BLOG  |  <a href="contato.php"> CONTATO </a> </span> -->
     </div>
 
     <div class="linha_black"></div>

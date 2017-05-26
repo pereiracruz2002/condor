@@ -1,6 +1,14 @@
 <?php
-add_theme_support('post-thumbnails', array('post','artigos','banners','adsense'));
-register_taxonomy_for_object_type( 'tags', 'artigos' );
+
+add_theme_support( 'post-thumbnails' );
+
+if ( function_exists( 'register_nav_menu' ) ) {
+
+register_nav_menu( 'meu_menu', 'Este é meu primeiro menu' );
+
+register_nav_menu( 'segundo_menu', 'Este é meu segundo menu' );
+
+}
 
 //add_theme_support('artigos-thumbnails', array('artigos'));
 

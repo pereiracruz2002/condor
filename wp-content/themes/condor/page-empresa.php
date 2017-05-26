@@ -13,13 +13,16 @@ get_header();
       <div class="large-8 columns">
         <h2 class="tit_empresa">Sobre a <span class="txt_laranja">CONDOR ASSESSORIA</span></h2>
         <br>
+        <?php 
+        while (have_posts()) {
+          the_post();
+        ?>
           <div class="txt_empresa">
-            Uma empresa prestadora de serviços junto à órgãos públicos, atuando há mais de
-            20 anos no mercado com equipe altamente especializada e qualificada.<br>
-            Possui amplo conhecimento, agilidade e tempo para elaborar e executar os
-            procedimentos necessários que, do serviço a ser executado, onde o contador, a
-            administração tem o seu tempo escasso.
+          <?php the_content(); ?>
           </div>
+          <?php
+        } //endwhile;
+        ?> 
       </div>
 
       <div class="large-4 columns">

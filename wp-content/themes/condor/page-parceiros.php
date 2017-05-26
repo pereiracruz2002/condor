@@ -12,12 +12,18 @@ get_header();
 
     <div class="row">
       <div class="large-8 columns">
+          
+           <?php 
+        while (have_posts()) {
+          the_post();
+        ?>
           <div class="txt_parceiro">
-            Conheça alguns de nossos parceiros:<br>
-            Nossa empresa sempre teve um objetivo muito claro, que é oferecer aos
-            nossos clientes soluções para agilizar e tornar profissional seus serviços.<br>
-            Por isso contamos com parceiros que mantêm o mesmo método de trabalho de nossa empresa.
+          <?php the_content(); ?>
           </div>
+          <?php
+        } //endwhile;
+        ?> 
+       
       </div>
       <div class="large-4 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_parceiro.jpg"></img></div>
 </div>

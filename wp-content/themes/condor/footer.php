@@ -5,7 +5,9 @@
  * @package bootstrap-basic
  */
 ?>
-<div class="row">
+<br />
+<br />
+
   <?php
       global $wp_query;
       $args = array_merge( array( 'post_type' => 'novidades' ) );
@@ -14,54 +16,34 @@
       ?>
       <?php while ( have_posts() ) : the_post();?>
       <?php $banner = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big' ); ?>
-  <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
-      <div class="large-4 columns txt_blog">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a
-          type specimen book<br>
-          <span class="bt_saiba">saiba mais</span>
-      </div>
-
-      <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
+      <?php if($i==0){?>
+      <div class="row">
+      <?php }?>
+          <div class="large-2 columns"> <img src="<?php echo $banner[0];?>" class="" alt=""></div>
           <div class="large-4 columns txt_blog">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book
-              <br>
-              <span class="bt_saiba">saiba mais</span>
+               <?php the_content(); ?>
+              <span class="bt_saiba"><a href="<?php the_permalink();?>">saiba mais</a></span>
           </div>
-  </div>
-<br>
-<br>
-<div class="row">
-  <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
-      <div class="large-4 columns txt_blog">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a
-          type specimen book
-          <br>
-          <span class="bt_saiba"><a href="#">saiba mais</a></span>
+
+             
+        
+        <?php if($i==1){?>
+
       </div>
+      <br>
+      <br>
+      <?php }?>
+       <?php
+          $i++;
+          endwhile;
+          if($i==2){
+            $i=0;
+          }
+          // Reset Query
+          wp_reset_query();
+        ?>
 
-      <div class="large-2 columns"><img src="<?php echo get_template_directory_uri(); ?>/imgs/pic_blog.jpg"></img></div>
-          <div class="large-4 columns txt_blog">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book
-              <br>
-              <span class="bt_saiba">saiba mais</span>
-          </div>
-  </div>
-  <br><br>
-</div>
 
-
-<br>
-<br>
 <div class="fundo_rodape">
 
   <div class="row">

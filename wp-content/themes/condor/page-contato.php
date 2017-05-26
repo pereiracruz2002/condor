@@ -13,7 +13,7 @@ get_header();
   <div class="small-12 medium-12 large-6 columns">
     <h5>Preencha o formulário de contato</h5>
       <br>
-          <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" class="form-horizontal" role="form" method="post">
+        <!--   <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" class="form-horizontal" role="form" method="post">
             <div class="form-group">
               <label for="name" class="col-lg-2 control-label">Nome</label>
               <div class="col-lg-10">
@@ -49,7 +49,17 @@ get_header();
                     <button type="submit" class="btn btn-default button">Enviar</button>
                 </div>
             </div>
-        </form>
+        </form> -->
+         <?php 
+        while (have_posts()) {
+          the_post();
+        ?>
+         
+          <?php the_content(); ?>
+
+          <?php
+        } //endwhile;
+        ?> 
   </div>
 
 

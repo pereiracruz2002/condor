@@ -229,3 +229,17 @@ hr{
   margin: 0;
   text-align: justify;
 }
+
+#menu_principal{
+  display: table;
+}
+#menu_topo{
+  padding-bottom: 10px;
+}
+#menu_topo li{
+  float:left;
+  list-style: none;
+  text-transform: uppercase;
+  padding-left:3px;
+
+}
